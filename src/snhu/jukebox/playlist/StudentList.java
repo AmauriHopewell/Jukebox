@@ -24,13 +24,11 @@ public class StudentList {
 		// - Use examples above to add your name to the studenNames ArrayList      //
 	    // - Add your code BELOW this comment block                                //
 		/////////////////////////////////////////////////////////////////////////////
-		
-		
-		
-		
-		
+		String StudentName3 = "Amauri Hopewell";
+		studentNames.add(StudentName3);
 		
 		return studentNames;
+	
 	}
 
 	public Student GetStudentProfile(String student){
@@ -53,6 +51,10 @@ public class StudentList {
 		   // - Add your code BELOW this comment block                                //
 		   /////////////////////////////////////////////////////////////////////////////
 			   
+    	   case "Amauri_Hopewell_Playlist":
+		    Amauri_Hopewell_Playlist amauriHopewellPlaylist = new Amauri_Hopewell_Playlist();
+		    Student AmauriHopewell = new Student("Amauri Hopewell", amauriHopewellPlaylist.StudentPlaylist());
+		    return AmauriHopewell;
 			   
 			   
 			   

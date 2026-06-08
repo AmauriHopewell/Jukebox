@@ -37,6 +37,13 @@ public class StudentTest {
     // - Add your code BELOW this comment block                      //
     ///////////////////////////////////////////////////////////////////
 	
+	@Test
+	public void testGetStudentNameListAmauriHopewell() {
+		List<String> studentNames = new ArrayList<String>();							//create variable for student list of names
+		StudentList studentList = new StudentList();									//instantiate the StudentList object so we can access it's methods and properties
+		studentNames = studentList.getStudentsNames();									//populate the studentNames list with the actual values in the StudentsList object
+		assertEquals(true, studentNames.contains("Amauri Hopewell"));					//test case to see if the StudentList contains the name we expect
+	}
 	
 	
 	
@@ -65,7 +72,12 @@ public class StudentTest {
     // - Add your code BELOW this comment block                         //
     //////////////////////////////////////////////////////////////////////
 	
-		
+		@Test
+		public void testGetStudentAmauriHopewellProfile() {
+			Amauri_Hopewell_Playlist amauriHopewellPlaylist = new Amauri_Hopewell_Playlist();						//instantiating the variable for a specific student
+			Student AmauriHopewell = new Student("Amauri Hopewell", amauriHopewellPlaylist.StudentPlaylist());		//creating populated student object
+			assertEquals("Amauri Hopewell", AmauriHopewell.getName());											//test case pass/fail line - did the name match what you expected?
+		}	
 	
 	
 	

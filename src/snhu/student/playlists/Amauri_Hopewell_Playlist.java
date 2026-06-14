@@ -38,6 +38,14 @@ public class Amauri_Hopewell_Playlist {
 			playlist.add(sleeptokenTracks.get(0));
 			playlist.add(sleeptokenTracks.get(1));
 			
+			//add song from  band from other student 
+			//(Disturbed from "Nicholas-Huffines-Playlist" branch
+			Disturbed disturbedBand = new Disturbed();
+			ArrayList<Song> disturbedTracks = new ArrayList<Song>();
+			disturbedTracks = disturbedBand.getDisturbedSongs();
+			
+			playlist.add(disturbedTracks.get(0));
+			playlist.add(disturbedTracks.get(1));
 			
 		    return playlist;
 		}
